@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp">
+
+
+        <ImageView
+            android:id="@+id/car_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/car_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bags"
+            android:drawableStart="@drawable/ic_baseline_attach_money_24"
+            android:drawablePadding="10dp"
+            tools:text="Цена: 1000 рублей/день" />
+
+        <TextView
+            android:id="@+id/total_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/ic_baseline_attach_money_24"
+            android:drawablePadding="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/car_item_price"
+            tools:text="Общая стоимость: 5000 рублей" />
+
+        <TextView
+            android:id="@+id/passengers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/car_item_image"
+            android:textAlignment="center"
+            android:drawableTop="@drawable/ic_user_32"
+            android:drawablePadding="10dp"
+            tools:text="5 мест" />
+
+        <TextView
+            android:id="@+id/bags"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/doors"
+            app:layout_constraintStart_toEndOf="@+id/passengers"
+            app:layout_constraintTop_toBottomOf="@+id/car_item_image"
+            android:textAlignment="center"
+            android:drawableTop="@drawable/ic_briefcase_32"
+            android:drawablePadding="10dp"
+            tools:text="3 багажа" />
+
+        <TextView
+            android:id="@+id/doors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/car_item_image"
+            android:textAlignment="center"
+            android:drawableTop="@drawable/ic_car_door_32"
+            android:drawablePadding="10dp"
+            tools:text="5 дверей" />
+
+        <TextView
+            android:id="@+id/date_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/ic_baseline_calendar_today_24"
+            android:drawablePadding="10dp"
+            android:text="Дата проката: 21.07.2020"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/total_cost" />
+
+        <TextView
+            android:id="@+id/date_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/ic_baseline_calendar_today_24"
+            android:drawablePadding="10dp"
+            android:text="Дата возврата: 25.07.2020"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/date_start" />
+
+        <Button
+            android:id="@+id/make_order_button"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Оформить"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/date_end" />
+
+        <ProgressBar
+            android:id="@+id/car_item_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+

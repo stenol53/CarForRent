@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Car4Rent</string>
+    <string name="title_activity_bottom_navigation">Car4Rent</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="history">История заказов</string>
+    <string name="cars">Автопарк</string>
+    <string name="profile">Профиль</string>
+    <string name="profile_login">Логин: %1$s</string>
+    <string name="profile_name">ФИО: %1$s</string>
+    <string name="profile_phone">Телефон: %1$s</string>
+    <string name="profile_address">Адрес: %1$s</string>
+    <string name="connection_error">Connection error</string>
+    <string name="unable_profile_info">К сожалению, не удалось получить данные профиля.</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="surname">Фамилия</string>
+    <string name="name">Имя</string>
+    <string name="father_name">Отчество</string>
+    <string name="phone">Телефон</string>
+    <string name="address">Адрес</string>
+    <string name="register">Зарегистрироваться</string>
+    <string name="enter">Войти</string>
+    <string name="no_acc_make_register">Нет аккаунта? Зарегистрируйтесь здесь!</string>
+    <string name="edit">Редактировать</string>
+    <string name="change_password">Изменить пароль</string>
+    <string name="change">Изменить</string>
+    <string name="old_password">Старый пароль</string>
+    <string name="new_password">Новый пароль</string>
+    <string name="repeat_password">Повторите паролья</string>
+    <string name="car_price">Цена: %1$d рублей/день</string>
+    <string name="total_cost">Общая стоимость: %1$d рублей</string>
+    <string name="start_date">Дата проката: %1$s</string>
+    <string name="end_date">Дата возврата: %1$s</string>
+    <string name="car">Автомобиль: %1$s</string>
+    <string name="cost">Стоимость: %1$d</string>
+    <string name="state">Статус: %1$s</string>
+
+    <plurals name="passengers_plural">
+        <item quantity="one">%1$d место</item>
+        <item quantity="few">%1$d места</item>
+        <item quantity="other">%1$d мест</item>
+    </plurals>
+
+    <plurals name="bags_plural">
+        <item quantity="one">%1$d багажное место</item>
+        <item quantity="few">%1$d багажных места</item>
+        <item quantity="other">%1$d багажных мест</item>
+    </plurals>
+
+    <plurals name="doors_plural">
+        <item quantity="one">%1$d дверь</item>
+        <item quantity="few">%1$d двери</item>
+        <item quantity="other">%1$d дверей</item>
+    </plurals>
+</resources>
